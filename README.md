@@ -16,13 +16,13 @@ EventBus采用订阅者的策略,接收Event事件的类需要注册成为订阅
 
   @end
   @implementation CHMessageEventCenter{
-       + (instancetype)init{
-         self = [super init];
+     + (instancetype)init{
+        self = [super init];
          if (self){
               [[XEBEventBus defaultEventBus] registerSubscriber:self];
          }
          return self;
-      }
+    }
   }
 
 ```
@@ -43,7 +43,10 @@ EventBus采用订阅者的策略,接收Event事件的类需要注册成为订阅
 ## 实现发送事件
 CHEvent是一个自定义的Event对象，发送给订阅了该类型的对象，evnet中可以代入一些上下文内容
 ``` obj-c
-     CHEvent *event = [CHEvent new];
+  - (void)postEvent{
+       CHEvent *event = [CHEvent new];
 
-    [[XEBEventBus defaultEventBus] postEvent:event];
+       [[XEBEventBus defaultEventBus] postEvent:event];
+  }
+
 ```
