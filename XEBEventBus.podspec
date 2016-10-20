@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = "XEBEventBus base on object-c versiobn "
   s.author       = { "chausson" => "232564026@qq.COM" }
   s.license      = "MIT"
-  s.description  = "Command Mode apply on iOS project "
+  s.description  = "Command Mode apply on iOS project,decoupling executor and invoker "
   s.homepage     = "https://github.com/chausson/XEBEventBus.git"
     
   s.platform     = :ios, "8.0"
