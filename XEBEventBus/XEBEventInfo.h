@@ -24,5 +24,3 @@ FOUNDATION_EXPORT const unsigned charCHEventBusVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <XiateEventBus/PublicHeader.h>
 
-#import <CHEventBus/XEBEventBus.h>
-#import <CHEventBus/XEBSubscriber.h>
