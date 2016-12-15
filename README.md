@@ -3,7 +3,7 @@ EventBus Object-C Version(EventBus 的Object-C语言版本)
 
 #Install
 ```
-  pod install
+pod ‘XEBEventBus'
 ```
 
 # How to Use
