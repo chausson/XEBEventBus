@@ -17,7 +17,7 @@ EventBus采用订阅者的策略,接收Event事件的类需要注册成为订阅
   @end
   @implementation CHMessageEventCenter{
      + (instancetype)init{
-        self = [super init];
+         self = [super init];
          if (self){
               [[XEBEventBus defaultEventBus] registerSubscriber:self];
          }
